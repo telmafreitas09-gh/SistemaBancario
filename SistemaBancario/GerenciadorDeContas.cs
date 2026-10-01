@@ -13,19 +13,19 @@ namespace SistemaBancario
 
         public ContaBancaria BuscarConta(string numeroConta)
         {
-            foreach (var conta in contas)
-            {
-                if (conta.NumeroConta == numeroConta)
-                {
-                    return conta;
+        foreach (var conta in contas)
+        {
+        if (conta.NumeroConta == numeroConta)
+        {
+        return conta;
                 }
-            }
-            return null;
+        }
+        return null;
         }
 
         public List<ContaBancaria> ObterTodas()
         {
-            return contas;
+        return contas;
         }
     }
 }
